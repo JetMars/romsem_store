@@ -1,0 +1,47 @@
+@import "scss/libs/normalize.css";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 117rem 1fr;
+  grid-template-rows: 9.5rem 1fr 1fr;
+  background: #f2f2f2;
+}
+
+.header {
+  width: 100%;
+  background-color: red;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.main {
+  width: 100%;
+  height: 10rem;
+  background-color: rgb(39, 6, 182);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.footer {
+  width: 100%;
+  height: 10rem;
+  background-color: rgb(196, 161, 8);
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+.nav {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(3, 206, 206);
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+.cart {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(216, 3, 145);
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+}
