@@ -1,0 +1,36 @@
+.nav {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 2.6rem 3.8rem 0 0;
+  }
+  &__logo {
+    align-self: flex-end;
+    display: block;
+    margin-right: 2rem;
+    width: 137px;
+    height: 140px;
+  }
+  &__list {
+    align-self: flex-end;
+    li {
+      position: relative;
+      font-weight: 400;
+      font-size: 2.4rem;
+      letter-spacing: 0.2rem;
+      margin-top: 3rem;
+      text-decoration: none;
+      list-style-type: none;
+      cursor: pointer;
+      :hover {
+        color: #ff9846;
+      }
+      img {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        left: -5rem;
+      }
+    }
+  }
+}
