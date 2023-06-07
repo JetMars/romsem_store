@@ -1,0 +1,27 @@
+.more {
+  margin: 5rem 0 6rem 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #a4acad;
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  &__info {
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+    color: #f46d40;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      width: 10px;
+      height: 10px;
+      border-top: 1px solid #f46d40;
+      border-right: 1px solid #f46d40;
+      margin-left: 10px;
+      transform: rotate(133deg);
+    }
+  }
+}
