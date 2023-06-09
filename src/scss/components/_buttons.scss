@@ -10,4 +10,13 @@
   border: none;
   outline: none;
   cursor: pointer;
+  &__cart {
+    width: 100%;
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    background: #ff9846;
+    justify-self: flex-end;
+    letter-spacing: 2px;
+  }
 }
