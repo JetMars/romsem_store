@@ -6,6 +6,7 @@
 @import "scss/components/buttons";
 @import "scss/components/more";
 @import "scss/components/cart";
+@import "scss/components/footer";
 
 html {
   font-size: 62.5%;
@@ -15,7 +16,7 @@ body {
   font-family: "DIN Pro", Arial, sans-serif;
   display: grid;
   grid-template-columns: 1fr 1170px 1fr;
-  grid-template-rows: 9.5rem 1fr 1fr;
+  grid-template-rows: 9.5rem auto auto;
 }
 
 .header {
@@ -29,7 +30,6 @@ body {
   background-color: #f2f2f2;
 }
 .footer {
-  background-color: rgb(196, 161, 8);
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   background-color: #f2f2f2;

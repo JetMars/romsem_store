@@ -1,0 +1,70 @@
+.company {
+  padding: 31px 0 48px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  &__about {
+    border-right: 0.5px solid #a4acad;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  &__about-list {
+    padding: 0;
+    list-style-type: none;
+    cursor: pointer;
+    :first-child {
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    li {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__socials {
+    border-right: 0.5px solid #a4acad;
+    padding-left: 4rem;
+    font-weight: 500;
+    font-size: 18px;
+    &-title {
+      margin: 0;
+    }
+    &-phone {
+      margin-top: 10px;
+      color: #a4acad;
+    }
+    &-text {
+      margin-top: 20px;
+      font-weight: 400;
+      color: #a4acad;
+    }
+    &-icons {
+      margin-top: 10px;
+      display: flex;
+      gap: 30px;
+    }
+    &-wrap {
+      opacity: 0.3;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &__contacts {
+    padding-left: 4rem;
+    font-weight: 400;
+    font-size: 18px;
+    color: #a4acad;
+    letter-spacing: 2px;
+    &-block {
+      width: 16rem;
+    }
+    &-phone {
+      margin-top: 0.5rem;
+      border-bottom: 1px solid #a4acad;
+    }
+    &-address {
+      margin-top: 0.5rem;
+    }
+  }
+}
