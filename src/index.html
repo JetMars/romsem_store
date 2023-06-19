@@ -10,10 +10,10 @@
     <header class="header">
       <section class="contacts">
         <div class="contacts__phone">
-          <div class="contacts__text">Наш телефон</div>
-          <div class="contacts__number">+996 705 188 955</div>
-          <div class="contacts__number">+996 555 188 955</div>
-          <div class="contacts__time">работаем с 10:00 до 00:00</div>
+          <div class="contacts__phone-text">Наш телефон</div>
+          <a href="/" class="contacts__phone-number">+996 705 188 955</a>
+          <a href="/" class="contacts__phone-number">+996 555 188 955</a>
+          <div class="contacts__phone-time">работаем с 10:00 до 00:00</div>
         </div>
         <div class="contacts__sity">
           <div class="contacts__sity-text">Город:</div>
@@ -21,7 +21,7 @@
         </div>
         <div class="contacts__info">
           <div class="contacts__info-rev">Отзывы</div>
-          <div class="contacts__info-delivery">Доставка и оплата</div>
+          <a href="/" class="contacts__info-delivery">Доставка и оплата</a>
         </div>
         <div class="contacts__search">
           <img src="./assets/img/header/search.png" alt="search" />
@@ -36,41 +36,66 @@
               src="./assets/img/main/promo-philadelphia.png"
               alt="philadelphia"
             />
+            <button class="btn btn_carousel">Хочу!</button>
           </div>
           <div class="carousel__dots">
-            <span class="dot-active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="carousel__dot carousel__dot_active"></span>
+            <span class="carousel__dot"></span>
+            <span class="carousel__dot"></span>
+            <span class="carousel__dot"></span>
+            <span class="carousel__dot"></span>
           </div>
         </div>
         <section class="catalog">
-          <div class="catalog__block">
-            <div class="catalog__block-text">Чикен</div>
-            <img src="./assets/img/main/chicken.jpg" alt="chicken" />
-          </div>
-          <div class="catalog__block">
-            <div class="catalog__block-text">С угрем</div>
-            <img src="./assets/img/main/river-eel.jpg" alt="river-eel" />
-          </div>
-          <div class="catalog__block">
-            <div class="catalog__block-text">Корн дог</div>
-            <img src="./assets/img/main/corn-dog.jpg" alt="corn-dog" />
-          </div>
-          <div class="catalog__block">
-            <div class="catalog__block-text">Пицца</div>
-            <img src="./assets/img/main/pizza.jpg" alt="pizza" />
-          </div>
-          <div class="catalog__block">
-            <div class="catalog__block-text">Акции</div>
-            <img src="./assets/img/main/promotion.jpg" alt="promotion" />
-          </div>
+          <a class="catalog__item" href="/">
+            <div class="catalog__item-text">Чикен</div>
+            <img
+              class="catalog__item-image"
+              src="./assets/img/main/chicken.jpg"
+              alt="chicken"
+            />
+          </a>
+          <a class="catalog__item" href="/">
+            <div class="catalog__item-text">С угрем</div>
+            <img
+              class="catalog__item-image"
+              src="./assets/img/main/river-eel.jpg"
+              alt="river-eel"
+            />
+          </a>
+          <a class="catalog__item" href="/">
+            <div class="catalog__item-text">Корн дог</div>
+            <img
+              class="catalog__item-image"
+              src="./assets/img/main/corn-dog.jpg"
+              alt="corn-dog"
+            />
+          </a>
+          <a class="catalog__item" href="/">
+            <div class="catalog__item-text">Пицца</div>
+            <img
+              class="catalog__item-image"
+              src="./assets/img/main/pizza.jpg"
+              alt="pizza"
+            />
+          </a>
+          <a class="catalog__item" href="/">
+            <div class="catalog__item-text">Акции</div>
+            <img
+              class="catalog__item-image"
+              src="./assets/img/main/promotion.jpg"
+              alt="promotion"
+            />
+          </a>
         </section>
         <section class="slider">
           <div class="slider__panel">
-            <div class="slider__panel-new">Новинки</div>
-            <div class="slider__panel-popular">Популярное</div>
+            <div class="slider__panel-wrap">
+              <a href="/" class="slider__panel-new">Новинки</a>
+            </div>
+            <div class="slider__panel-wrap slider__panel_active">
+              <a href="/" class="slider__panel-popular"> Популярное </a>
+            </div>
           </div>
           <div class="arrow arrow-right">
             <div class="triangle triangle-right"></div>
@@ -83,8 +108,11 @@
               <div class="slider__item-img">
                 <img src="./assets/img/main/salmon-set.png" alt="salmon-set" />
               </div>
-              <div class="slider__item-text">Саломон сет</div>
-              <div class="slider__item-descr">1050 грамм, 30 кусочков</div>
+              <div class="slider__item-title">
+                <div class="slider__item-text">Саломон сет</div>
+                <div class="slider__item-descr">1050 грамм, 30 кусочков</div>
+              </div>
+              <span class="line"></span>
               <div class="slider__item-inner">
                 <div class="slider__item-price">1500 СОМ</div>
                 <button class="btn">Хочу!</button>
@@ -97,8 +125,11 @@
                   alt="philadelphia-salmon"
                 />
               </div>
-              <div class="slider__item-text">Филадельфия и лосось сет</div>
-              <div class="slider__item-descr">1260 грамм, 36 кусочков</div>
+              <div class="slider__item-title">
+                <div class="slider__item-text">Филадельфия и лосось сет</div>
+                <div class="slider__item-descr">1260 грамм, 36 кусочков</div>
+              </div>
+              <span class="line"></span>
               <div class="slider__item-inner">
                 <div class="slider__item-price">1150 СОМ</div>
                 <button class="btn">Хочу!</button>
@@ -111,8 +142,11 @@
                   alt="philadelphia"
                 />
               </div>
-              <div class="slider__item-text">Самая большая Филадельфия</div>
-              <div class="slider__item-descr">2050 грамм, 45 кусочков</div>
+              <div class="slider__item-title">
+                <div class="slider__item-text">Самая большая Филадельфия</div>
+                <div class="slider__item-descr">2050 грамм, 45 кусочков</div>
+              </div>
+              <span class="line"></span>
               <div class="slider__item-inner">
                 <div class="slider__item-price">2100 СОМ</div>
                 <button class="btn">Хочу!</button>
@@ -166,24 +200,24 @@
               мессенджер для общения
             </div>
             <div class="company__socials-icons">
-              <div class="company__socials-wrap">
+              <a class="company__socials-link">
                 <i
                   class="fa-brands fa-square-whatsapp"
                   style="color: #43d854; font-size: 50px"
                 ></i>
-              </div>
-              <div class="company__socials-wrap">
+              </a>
+              <a class="company__socials-link">
                 <i
                   class="fa-brands fa-telegram"
                   style="color: #62a8de; font-size: 50px"
                 ></i>
-              </div>
-              <div class="company__socials-wrap">
+              </a>
+              <a class="company__socials-link">
                 <i
                   class="fa-brands fa-square-instagram"
                   style="color: #e56969; font-size: 50px"
                 ></i>
-              </div>
+              </a>
             </div>
           </div>
           <div class="company__contacts">
@@ -197,66 +231,88 @@
       </div>
     </footer>
     <nav class="nav">
-      <div class="nav__container">
-        <img src="./assets/img/Logo.png" alt="logo" class="nav__logo" />
-        <div class="nav__line"></div>
+      <div class="nav__wrapper">
+        <a href="/" class="nav__logo">
+          <img src="./assets/img/Logo.png" alt="logo" />
+        </a>
+        <span class="line line_nav"></span>
         <ul class="nav__list">
-          <li>
-            <img src="./assets/img/nav/pizza.png" alt="pizza" />
-            <div class="nav__list-text">Пицца</div>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="/">
+              <img src="./assets/img/nav/pizza.png" alt="pizza" />
+              <div class="nav__list-text">Пицца</div>
+            </a>
           </li>
-          <li>
-            <img src="./assets/img/nav/sets.png" alt="sets" />
-            <div class="nav__list-text">Сеты</div>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="/">
+              <img src="./assets/img/nav/sets.png" alt="sets" S />
+              <div class="nav__list-text">Сеты</div>
+            </a>
           </li>
-          <li>
-            <img src="./assets/img/nav/wok.png" alt="wok" />
-            <div class="nav__list-text">WOK</div>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="/">
+              <img src="./assets/img/nav/wok.png" alt="wok" />
+              <div class="nav__list-text">WOK</div>
+            </a>
           </li>
-          <li>
-            <img src="./assets/img/nav/rolls.png" alt="rolls" />
-            <div class="nav__list-text">Роллы</div>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="/">
+              <img src="./assets/img/nav/rolls.png" alt="rolls" />
+              <div class="nav__list-text">Роллы</div>
+            </a>
           </li>
-          <li>
-            <img src="./assets/img/nav/sushi.png" alt="sushi" />
-            <div class="nav__list-text">Суши</div>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="http:/">
+              <img src="./assets/img/nav/sushi.png" alt="sushi" />
+              <div class="nav__list-text">Суши</div>
+            </a>
           </li>
-          <li>
-            <img src="./assets/img/nav/salad.png" alt="salad" />
-            <div class="nav__list-text">Салаты</div>
+          <li class="nav__list-item nav__list-item_active">
+            <a class="nav__list-link" href="http:/">
+              <img src="./assets/img/nav/salad.png" alt="salad" />
+              <div class="nav__list-text">Салаты</div>
+            </a>
           </li>
-          <li>
-            <img src="./assets/img/nav/soup.png" alt="soup" />
-            <div class="nav__list-text">Супы</div>
+          <li class="nav__list-item nav__list-item_active">
+            <a class="nav__list-link" href="/">
+              <img src="./assets/img/nav/soup.png" alt="soup" />
+              <div class="nav__list-text">Супы</div>
+            </a>
           </li>
-          <li>
-            <img src="./assets/img/nav/corn.png" alt="corn" />
-            <div class="nav__list-text">Корн доги</div>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="/">
+              <img src="./assets/img/nav/corn.png" alt="corn" />
+              <div class="nav__list-text">Корн доги</div>
+            </a>
           </li>
-          <li>
-            <img src="./assets/img/nav/drinks.png" alt="drinks" />
-            <div class="nav__list-text">Напитки</div>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="/">
+              <img src="./assets/img/nav/drinks.png" alt="drinks" />
+              <div class="nav__list-text">Напитки</div>
+            </a>
           </li>
-          <li>
-            <img src="./assets/img/nav/prom.png" alt="prom" />
-            <div class="nav__list-text">Акции</div>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="/">
+              <img src="./assets/img/nav/prom.png" alt="prom" />
+              <div class="nav__list-text">Акции</div>
+            </a>
           </li>
         </ul>
       </div>
     </nav>
     <section class="cart">
       <div class="cart__wrapper">
-        <div class="cart__items">
+        <div class="cart__row">
           <h2 class="cart__title">Ваша корзина пуста.</h2>
           <div class="cart__text">Добавьте же скорее что-нибудь!</div>
         </div>
-        <button class="btn btn__cart">Бесплатная доставка от 800 СОМ</button>
+        <button class="btn btn_cart">Бесплатная доставка от 800 СОМ</button>
       </div>
       <div class="cart__adress">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23394.01187386841!2d74.55795402547825!3d42.86753585871745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dc91b3c881%3A0x492ebaf57cdee27d!2z0JHQuNGI0LrQtdC6LCDQmtGL0YDQs9GL0LfRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1686133961260!5m2!1sru!2sru"
-          width="290px"
-          height="116px"
+          width="210px"
+          height="110px"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -269,6 +325,25 @@
         </div>
       </div>
     </section>
+
+    <!-- <div class="popup">
+      <div class="popup__wrap">
+        <div class="popup__filter">
+          <div class="popup__filter-text">Сортировка</div>
+          <div class="popup__filter-name">По умолчанию</div>
+        </div>
+        <div class="line"></div>
+        <ul class="popup__list">
+          <li class="popup__list-item">По умолчанию</li>
+          <li class="popup__list-item">Название</li>
+          <li class="popup__list-item">Сначала дешевле</li>
+          <li class="popup__list-item">Сначала дороже</li>
+          <li class="popup__list-item">Количество кусочков</li>
+          <li class="popup__list-item">Вес</li>
+        </ul>
+      </div>
+    </div> -->
+
     <script
       src="https://kit.fontawesome.com/1a7ce0f37b.js"
       crossorigin="anonymous"

@@ -1,59 +1,59 @@
 .cart {
-  padding: 5.5rem 0 0 4rem;
+  padding: 4rem 2rem 0 2rem;
   &__wrapper {
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 29rem;
-    height: 14rem;
+    min-height: 11rem;
     text-align: center;
     border-radius: 5px;
   }
-  &__items {
-    padding: 12px 13px 0 13px;
+  &__row {
+    padding: 1rem 1rem 0 1rem;
   }
   &__title {
     margin: 0;
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
   }
   &__text {
-    margin-top: 10px;
-    letter-spacing: 2px;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
     font-weight: 400;
-    font-size: 1.8rem;
-    color: #a4acad;
+    font-size: 1.5rem;
+    color: $second-color;
   }
   &__adress {
     position: relative;
     margin-top: 2rem;
-    width: 29rem;
     text-align: center;
     background: #f2f2f2;
     border-radius: 5px;
     &-title {
       padding-top: 3.8rem;
       font-weight: 500;
-      font-size: 24px;
+      font-size: 2rem;
     }
     &-order {
-      padding-bottom: 7px;
-      padding-top: 10px;
+      padding-bottom: 0.7rem;
+      padding-top: 1rem;
       font-weight: 400;
-      font-size: 18px;
-      color: #a4acad;
+      font-size: 1.5rem;
+      color: $second-color;
     }
     &-marker {
       position: absolute;
-      top: 50%;
+      top: 52%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 60px;
-      height: 60px;
-      background: #ff9846;
+      width: 4rem;
+      height: 4rem;
+      background: $main;
       border-radius: 50%;
       img {
+        width: 25px;
+        height: 25px;
         position: absolute;
         top: 50%;
         left: 50%;

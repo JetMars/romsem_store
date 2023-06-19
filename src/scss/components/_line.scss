@@ -1,0 +1,9 @@
+.line {
+  height: 0.5px;
+  background-color: #a4acad;
+  &_nav {
+    width: 150px;
+    align-self: flex-end;
+    margin-top: 2.4rem;
+  }
+}

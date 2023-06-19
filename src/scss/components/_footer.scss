@@ -1,70 +1,90 @@
 .company {
-  padding: 31px 0 48px 0;
+  padding: 23px 0 48px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 2fr 2fr;
   grid-template-rows: 1fr;
+  border-top: 0.5px solid $second-color;
   &__about {
-    border-right: 0.5px solid #a4acad;
+    border-right: 0.5px solid $second-color;
     font-weight: 400;
-    font-size: 1.8rem;
-  }
-  &__about-list {
-    padding: 0;
-    list-style-type: none;
-    cursor: pointer;
-    :first-child {
-      margin-top: 0;
-      margin-bottom: 2rem;
-    }
-    li {
-      margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    &-list {
+      padding: 0;
+      list-style-type: none;
+      cursor: pointer;
+      :first-child {
+        margin-top: 0;
+        margin-bottom: 2rem;
+      }
+      li {
+        margin-bottom: 1rem;
+        opacity: 1;
+        transition: opacity 0.5s linear;
+      }
     }
   }
   &__socials {
-    border-right: 0.5px solid #a4acad;
-    padding-left: 4rem;
+    border-right: $border;
+    padding-left: 2rem;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.5rem;
     &-title {
       margin: 0;
     }
     &-phone {
       margin-top: 10px;
-      color: #a4acad;
+      color: $second-color;
     }
     &-text {
       margin-top: 20px;
       font-weight: 400;
-      color: #a4acad;
+      color: $second-color;
     }
     &-icons {
       margin-top: 10px;
       display: flex;
       gap: 30px;
-    }
-    &-wrap {
-      opacity: 0.3;
-      cursor: pointer;
-      &:hover {
-        opacity: 1;
+      i {
+        &:before {
+          font-size: 40px;
+        }
       }
+    }
+    &-link {
+      display: block;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.1s linear;
     }
   }
   &__contacts {
-    padding-left: 4rem;
+    padding-left: 3rem;
     font-weight: 400;
-    font-size: 18px;
-    color: #a4acad;
-    letter-spacing: 2px;
+    font-size: 1.6rem;
+    color: $second-color;
+    letter-spacing: 1px;
     &-block {
-      width: 16rem;
+      display: inline-block;
     }
     &-phone {
       margin-top: 0.5rem;
-      border-bottom: 1px solid #a4acad;
+      border-bottom: 1px solid $second-color;
     }
     &-address {
       margin-top: 0.5rem;
+    }
+  }
+}
+
+@media (any-hover: hover) {
+  .company {
+    &__about-list li:hover {
+      opacity: 0.7;
+      transition: opacity 0.1s linear;
+    }
+    &__socials-link:hover {
+      opacity: 1;
+      transition: opacity 0.4s linear;
     }
   }
 }
