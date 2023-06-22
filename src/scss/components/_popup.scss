@@ -1,16 +1,43 @@
 .popup {
-  &__wrap {
-  }
-
+  width: 13rem;
+  height: 5rem;
+  border-radius: 19px;
+  background-color: #ffff;
+  box-shadow: 2px -1px 9px 5px rgba(34, 60, 80, 0.2);
+  padding: 10px 14px 10px 14px;
   &__filter {
     &-text {
+      font-weight: 300;
+      font-size: 1.3rem;
     }
-
     &-name {
+      display: block;
+      position: relative;
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-top: 0.5rem;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 6px;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #f46d40;
+        border-right: 1px solid #f46d40;
+        margin-left: 1rem;
+        transform: rotate(133deg);
+      }
     }
   }
   &__list {
+    display: none;
+    padding-left: 0;
     &-item {
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-top: 1rem;
+      list-style-type: none;
     }
   }
 }

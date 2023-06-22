@@ -1,0 +1,28 @@
+.category {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 22px;
+    &-title {
+      font-weight: 400;
+      font-size: 3rem;
+      padding-left: 40px;
+    }
+    &-image {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+  &__wrapper {
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+}
