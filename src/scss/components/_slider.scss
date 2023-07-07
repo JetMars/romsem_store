@@ -1,6 +1,11 @@
 .slider {
   position: relative;
   padding-top: 3rem;
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+  }
   &__panel {
     display: flex;
     column-gap: 3rem;
@@ -35,6 +40,7 @@
     gap: 2.5rem;
   }
 }
+
 .arrow {
   position: absolute;
   width: 40px;
@@ -45,11 +51,11 @@
   transition: opacity 0.5s linear;
   cursor: pointer;
   &-right {
-    top: 212px;
+    top: 161px;
     right: -72px;
   }
   &-left {
-    top: 212px;
+    top: 161px;
     left: -72px;
   }
 }
@@ -61,16 +67,16 @@
   border-top: 1px solid #f2f2f2;
   border-right: 1px solid #f2f2f2;
   margin-right: 60px;
-}
-.triangle-right {
-  top: 13px;
-  right: -44px;
-  transform: rotate(45deg);
-}
-.triangle-left {
-  top: 13px;
-  right: -48px;
-  transform: rotate(-135deg);
+  &-right {
+    top: 50%;
+    right: -44px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  &-left {
+    top: 50%;
+    right: -48px;
+    transform: translateY(-50%) rotate(-135deg);
+  }
 }
 
 @media (any-hover: hover) {

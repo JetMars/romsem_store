@@ -30,7 +30,7 @@
     </header>
     <main class="main">
       <div class="container">
-        <!-- <section class="carousel">
+        <section class="carousel">
           <div class="carousel__images">
             <img
               src="./assets/img/main/promo-philadelphia.png"
@@ -362,40 +362,100 @@
           </p>
 
           <div class="more__info">Подробнее</div>
-        </section> -->
-
-        <section class="item-info">
-          <div class="item-info__header">
-            <a href="#" class="item-info__back">Назад</a>
-            <a href="#" class="item-info__next">Вперед</a>
-          </div>
-          <div class="item-info__wrap">
-            <div class="item-info__image">
-              <img
-                src="assets/img/products/philadelphia_salmon.png"
-                alt="philadelphia_salmon"
-              />
-            </div>
-            <div class="item-info__block">
-              <div class="item-info__title">Филадельфия и лосось сет</div>
-              <div class="item-info__gram">290 грамм</div>
-              <div class="item-info__inner">
-                <div class="item-info__price">1150 СОМ</div>
-                <button>-</button>
-                <span class="item-info__count">10</span>
-                <button>+</button>
-              </div>
-              <div class="item-info__comp">
-                <div class="item-info__comp-text">Состав</div>
-                <div class="item-info__comp-descr">
-                  Лосось, сыр "Филадельфия", огурец, авокадо
-                </div>
-              </div>
-              <button class="btn">Хочу!</button>
-            </div>
-          </div>
         </section>
       </div>
+
+      <section class="page-item">
+        <div class="page-item__header">
+          <div class="page-item__header-wrap">
+            <a href="#" class="page-item__header-back">Назад</a>
+            <a href="#" class="page-item__arrow">
+              <div class="page-item__triangle page-item__triangle-right"></div>
+            </a>
+          </div>
+          <div class="page-item__header-wrap">
+            <a href="#" class="page-item__header-next">Вперед</a>
+            <a href="#" class="page-item__arrow">
+              <div class="page-item__triangle page-item__triangle-left"></div>
+            </a>
+          </div>
+        </div>
+        <div class="page-item__wrap">
+          <div class="page-item__image">
+            <img
+              src="assets/img/products/philadelphia_salmon.png"
+              alt="philadelphia_salmon"
+            />
+          </div>
+          <div class="page-item__block">
+            <div class="page-item__title">Филадельфия и лосось сет</div>
+            <div class="page-item__gram">290 грамм</div>
+            <div class="page-item__inner">
+              <div class="page-item__price">1150 СОМ</div>
+              <button class="btn-minus"></button>
+              <span class="page-item__count">10</span>
+              <button class="btn-plus"></button>
+            </div>
+            <div class="page-item__comp">
+              <div class="page-item__comp-text">Состав</div>
+              <div class="page-item__comp-descr">
+                Лосось, сыр "Филадельфия", огурец, авокадо
+              </div>
+            </div>
+            <button class="btn btn_page-item">Хочу!</button>
+          </div>
+        </div>
+      </section>
+      <section class="slider container">
+        <div class="arrow arrow-right">
+          <div class="triangle triangle-right"></div>
+        </div>
+        <div class="arrow arrow-left">
+          <div class="triangle triangle-left"></div>
+        </div>
+        <div class="slider__title">Рекомендуем к этому товару</div>
+        <div class="slider__wrapper">
+          <div class="product product_recommend">
+            <div class="product__img">
+              <img
+                src="./assets/img/slider/philadelphia-slider.png"
+                alt="philadelphia-salmon"
+              />
+            </div>
+            <div class="product__title product__title_auto">
+              <div class="product__text product__text_center">Филадельфия</div>
+            </div>
+            <div class="product__inner product__inner_mt10">
+              <div class="product__price">140 СОМ</div>
+              <button class="btn-plus btn-plus_26px"></button>
+            </div>
+          </div>
+          <div class="product product_recommend">
+            <div class="product__img">
+              <img src="./assets/img/slider/banzai.png" alt="philadelphia" />
+            </div>
+            <div class="product__title product__title_auto">
+              <div class="product__text product__text_center">Банзай</div>
+            </div>
+            <div class="product__inner product__inner_mt10">
+              <div class="product__price">170 СОМ</div>
+              <button class="btn-plus btn-plus_26px"></button>
+            </div>
+          </div>
+          <div class="product product_recommend">
+            <div class="product__img">
+              <img src="./assets/img/slider/arigato.png" alt="salmon-set" />
+            </div>
+            <div class="product__title product__title_auto">
+              <div class="product__text product__text_center">Аригато</div>
+            </div>
+            <div class="product__inner product__inner_mt10">
+              <div class="product__price">180 СОМ</div>
+              <button class="btn-plus btn-plus_26px"></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">

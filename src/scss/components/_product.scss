@@ -5,12 +5,19 @@
   max-width: 21.6rem;
   height: 33rem;
   background-color: #ffffff;
+  &_recommend {
+    height: auto;
+    background-color: #f2f2f2;
+  }
   &__title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 1.5rem 0 1.5rem;
     height: 7rem;
+    &_auto {
+      height: auto;
+    }
   }
   &__img {
     padding: 0 1.5rem 0 1.5rem;
@@ -25,6 +32,10 @@
   &__text {
     font-weight: 500;
     font-size: 2rem;
+    &_center {
+      text-align: center;
+      margin-top: 1rem;
+    }
   }
   &__descr {
     font-weight: 400;
@@ -34,8 +45,12 @@
   &__inner {
     padding: 0 1.5rem 0.8rem 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    &_mt10 {
+      margin-top: 1rem;
+    }
   }
   &__price {
     font-weight: 700;
